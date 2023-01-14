@@ -16,14 +16,39 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         {/* <script src='/greet.js'></script> */}
       </Head>
-      <Script src={require("./greet.js")} strategy="lazyOnload" />
+      {/* <Script src={require("./greet.js")} strategy="lazyOnload" /> */}
+
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Blogs</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
 
 
       <main className={styles.main}>
         <div>
           <h1>Welcome to my blog Page</h1>
         </div>
-        <div className={styles.grid}>
+
+        <div >
+          <div>
+            <p>Blog1</p>
+            <p>This is a good blog</p>
+          </div>
+          <div>
+            <p>Blog2</p>
+            <p>This is a good blog</p>
+          </div>
+          <div>
+            <p>Blog3</p>
+            <p>This is a good blog</p>
+          </div>
+        </div>
+
+        {/* <div className={styles.grid}>
           <a
             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className={styles.card}
@@ -80,7 +105,7 @@ export default function Home() {
               with&nbsp;Vercel.
             </p>
           </a>
-        </div>
+        </div> */}
       </main>
     </>
   )
