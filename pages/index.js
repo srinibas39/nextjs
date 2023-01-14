@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Script from 'next/script'
+import Link from 'next/link'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 
@@ -20,10 +21,10 @@ export default function Home() {
 
       <nav>
         <ul>
-          <li>Home</li>
-          <li>Blogs</li>
-          <li>About</li>
-          <li>Contact</li>
+          <Link href={"./Home"}><li>Home</li></Link>
+          <Link href={"./Blog"}><li>Blogs</li></Link>
+          <Link href={"./About"}><li>About</li></Link>
+          <Link href={"./Contact"}><li>Contact</li></Link>
         </ul>
       </nav>
 
